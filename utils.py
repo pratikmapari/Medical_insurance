@@ -37,8 +37,10 @@ class MedicalInsurance():
         test_array[region_index]=1
 
         print("Test Array -->\n", test_array)
+
         charges=round(self.model.predict([test_array])[0],3)
-        print('The Predictive Charges Of Medical Insurance:',charges)
+        
+        print('The Predictive Charges Of Medical Insurance is:',charges)
         return charges
 
 if __name__=="__main__":
